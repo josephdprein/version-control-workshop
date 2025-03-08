@@ -198,13 +198,13 @@ Click 'Fork' in the top right to create your own copy of the repository.
 GitHub Pages lets you host websites directly from your repository.
 
 To enable GitHub Pages:
-  1. Go to your repository on GitHub
-  2. Click on "Settings" tab
-  3. Scroll down to "GitHub Pages" section
-  4. Under "Source", select "main" branch
-  5. Click "Save"
+1. Go to your repository on GitHub
+2. Click on "Settings" tab
+3. Scroll down to "GitHub Pages" section
+4. Under "Source", select "main" branch
+5. Click "Save"
 
-- Your site will be published at [https://yourusername.github.io/version-control-workshop/]
+- Your site will be published at `https://yourusername.github.io/version-control-workshop/`
 - Any changes pushed to the `main` branch will automatically update your live site
 
 ## Cloning a repository
@@ -218,6 +218,7 @@ Clone the repo to your computer by running `git clone <URL>` , replacing `<URL>`
 After cloning a repository, you can modify files and track those changes:
 
 - Personalize the site; delete all this text and add some of your own!
+   - The file is written in a handy format called MarkDown. Here's a [cheat sheet](https://www.markdownguide.org/cheat-sheet/) with some basic info.
 - Test your changes locally by opening the HTML file in a browser
 - Stage your changes with `git add`
 - Commit your changes with a descriptive message
@@ -259,4 +260,4 @@ Everyone makes mistakes with Git. Here are solutions to common problems:
   - `git checkout correct-branch` to switch to the right branch
   - `git commit -m "message"` to commit on the correct branch
 
-
+## What's next?
