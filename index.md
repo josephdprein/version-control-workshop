@@ -1,6 +1,6 @@
 # Introduction to Version Control: Git and Github
 
-The full text of this talk can be found here: [https://josephdprein.github.io/version-control-workshop/]
+The full text of this talk can be found here: <https://josephdprein.github.io/version-control-workshop/>
 
 ## Table of Contents
 - [Motivations](#motivations)
@@ -191,7 +191,7 @@ You can make changes to your fork without affecting the original.
 Your fork remains connected to the original repository; you can pull their changes into your fork when they update the code, or even open a pull request to ask them to fold *your* changes back into *their* code.
 
 Let's fork my sample github pages repository; it contains the text of this talk!
-You can find it at [https://github.com/josephdprein/version-control-workshop].
+You can find it at <https://github.com/josephdprein/version-control-workshop>.
 Click 'Fork' in the top right to create your own copy of the repository.
 
 ## Setting Up GitHub Pages
