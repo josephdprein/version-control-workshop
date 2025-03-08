@@ -1,5 +1,7 @@
 # Introduction to Version Control: Git and Github
 
+The full text of this talk can be found here: [https://josephdprein.github.io/version-control-workshop/]
+
 ## Table of Contents
 - [Motivations](#motivations)
 - [Git](#git)
@@ -26,38 +28,35 @@ Version control systems like Git solve several common problems in software devel
 - Collaborate with others without overwriting each other's work
 - Experiment with new features without breaking working code
 
-## Git
-
-### Installation
+## Installing Git
 Git can be installed on all major operating systems. Follow the steps for your platform:
 
-- Windows: 
-  - Download from [git-scm.com](https://git-scm.com/download/win)
-  - Run the installer with default options
-  - Use Git Bash for command line access
+### Windows: 
+- Download from [git-scm.com](https://git-scm.com/download/win)
+- Run the installer with default options
+- Use Git Bash for command line access
 
-- Mac: 
-  - Install via Homebrew: `brew install git`
-  - Or download from [git-scm.com](https://git-scm.com/download/mac)
+### Mac: 
+- Install via Homebrew: `brew install git`
+- Or download from [git-scm.com](https://git-scm.com/download/mac)
 
-- Linux: 
-  - Use package manager: 
-    - Ubuntu/Debian: `sudo apt install git`
-    - Fedora: `sudo dnf install git`
-    - Arch: `sudo pacman -S git`
+### Linux: 
+- Use package manager: 
+  - Ubuntu/Debian: `sudo apt install git`
+  - Fedora: `sudo dnf install git`
+  - Arch: `sudo pacman -S git`
 
-- Chromebook: 
-  - Enable Linux (Beta) feature in settings
-  - Open Terminal and run `sudo apt install git`
+### Chromebook: 
+- Enable Linux (Beta) feature in settings
+- Open Terminal and run `sudo apt install git`
 
-- After installation, verify with:
+### After installation, verify:
   - `git --version` in your terminal/command prompt
   - Configure your identity:
     - `git config --global user.name "Your Name"`
     - `git config --global user.email "your.email@example.com"`
 
-
-### Your First Repository
+## Your First Repository
 A Git repository is a project folder that Git tracks changes for.
 
 Create a new folder and change into it:
@@ -75,7 +74,7 @@ git init
    - Every folder with a .git folder is a Git repository
    - A repository (repo) is just a project tracked by Git
 
-### The Git Workflow
+## The Git Workflow
 
 1. **Make Changes**: Edit your files as normal
    - Create, modify, or delete files in your project directory
@@ -98,7 +97,7 @@ This three-step process (edit → stage → commit) is the foundation of Git's p
 - It allows you to group related changes together
 - It creates a clear history of your project's development
 
-### Cheat Sheet - Essential Commands
+## Cheat Sheet - Essential Commands
 Here are the most commonly used Git commands you'll need to know:
 
 - `git init` - Create a new repository
@@ -112,7 +111,7 @@ Here are the most commonly used Git commands you'll need to know:
 
 For complete documentation, visit [git-scm.com](https://git-scm.com/doc)
 
-### Your First Commit
+## Your First Commit
 
 First, create a new file called `helloWorld.html`
 Add the following contents and save the file:
@@ -132,7 +131,7 @@ Now, commit your changes by running `git commit -m "Add hello world file"`.
 Run `git status` once more; git will report nothing has changed since your last commit.
 You can see a history of your commits with `git log`.
 
-### Branching
+## Branching
 Branches allow you to work on different versions of your code simultaneously.
 
 Let's make a new branch. We can call it whatever we want; how about "add-name"?
@@ -161,7 +160,7 @@ Run `git add helloWorld.html` to stage your changes.
 Run `git diff --staged` to see the difference between your last commit and what you have staged.
 Now, run `git commit -m "Added my name and more content to helloWorld.html`.
 
-### Merging
+## Merging
 Merging integrates changes from one branch into another.
 
 Check out our original branch with `git checkout main`.
@@ -178,13 +177,13 @@ GitHub is a cloud-based service that hosts Git repositories.
 - It allows for easy collaboration and sharing of code
 - Provides additional features like issue tracking, creating and reviewing pull requests, and project management
 
-### Making an Account
+## Making an Account
 
 Go to [github.com](github.com) and sign up for a free account.
 Choose a username; it should be one you're comfortable sharing professionally.
 Set up your profile with a photo and bio, if you want.
 
-### Forking a repository
+## Forking a repository
 Forking creates your own copy of someone else's repository.
 
 You can make changes to your fork without affecting the original.
@@ -192,10 +191,10 @@ You can make changes to your fork without affecting the original.
 Your fork remains connected to the original repository; you can pull their changes into your fork when they update the code, or even open a pull request to ask them to fold *your* changes back into *their* code.
 
 Let's fork my sample github pages repository; it contains the text of this talk!
-You can find it [here](https://github.com/josephdprein/version-control-workshop).
-Click 'Fork' in the top right to fork the repository and have your own copy of the code.
+You can find it at [https://github.com/josephdprein/version-control-workshop].
+Click 'Fork' in the top right to create your own copy of the repository.
 
-### Setting Up GitHub Pages
+## Setting Up GitHub Pages
 GitHub Pages lets you host websites directly from your repository.
 
 To enable GitHub Pages:
@@ -208,14 +207,14 @@ To enable GitHub Pages:
 - Your site will be published at [https://yourusername.github.io/version-control-workshop/]
 - Any changes pushed to the `main` branch will automatically update your live site
 
-### Cloning a repository
+## Cloning a repository
 Cloning downloads a repository to your local machine.
 
 When you forked this repository in the previous step, it made a copy of it on your own github.
 From the page of your fork, click the 'Code <>' dropdown button and copy the URL.
 Clone the repo to your computer by running `git clone <URL>` , replacing `<URL>` with the URL you copied.
 
-### Making changes
+## Making changes
 After cloning a repository, you can modify files and track those changes:
 
 - Personalize the site; delete all this text and add some of your own!
@@ -223,7 +222,7 @@ After cloning a repository, you can modify files and track those changes:
 - Stage your changes with `git add`
 - Commit your changes with a descriptive message
 
-### Pushing to Remote
+## Pushing to Remote
 Pushing uploads your local commits to GitHub:
 
 - Push your changes to GitHub with `git push origin main`
@@ -259,4 +258,5 @@ Everyone makes mistakes with Git. Here are solutions to common problems:
   - `git reset --soft HEAD~1` to undo the last commit but keep changes staged
   - `git checkout correct-branch` to switch to the right branch
   - `git commit -m "message"` to commit on the correct branch
+
 
